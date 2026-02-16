@@ -1,0 +1,315 @@
+/**
+ * Layout Components Styles
+ */
+
+/* ============================================
+ * CONTAINER
+ * ============================================ */
+
+.tc-container {
+  width: 100%;
+  padding-left: var(--tc-spacing-4);
+  padding-right: var(--tc-spacing-4);
+}
+
+.tc-container--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tc-container--sm {
+  max-width: 640px;
+}
+
+.tc-container--md {
+  max-width: 768px;
+}
+
+.tc-container--lg {
+  max-width: 1024px;
+}
+
+.tc-container--xl {
+  max-width: 1280px;
+}
+
+.tc-container--full {
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .tc-container {
+    padding-left: var(--tc-spacing-6);
+    padding-right: var(--tc-spacing-6);
+  }
+}
+
+/* ============================================
+ * SECTION
+ * ============================================ */
+
+.tc-section {
+  width: 100%;
+}
+
+.tc-section--padding-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tc-section--padding-sm {
+  padding-top: var(--tc-spacing-4);
+  padding-bottom: var(--tc-spacing-4);
+}
+
+.tc-section--padding-md {
+  padding-top: var(--tc-spacing-8);
+  padding-bottom: var(--tc-spacing-8);
+}
+
+.tc-section--padding-lg {
+  padding-top: var(--tc-spacing-12);
+  padding-bottom: var(--tc-spacing-12);
+}
+
+.tc-section--padding-xl {
+  padding-top: var(--tc-spacing-16);
+  padding-bottom: var(--tc-spacing-16);
+}
+
+/* ============================================
+ * STACK
+ * ============================================ */
+
+.tc-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stack gaps */
+.tc-stack--gap-none { gap: 0; }
+.tc-stack--gap-xs { gap: var(--tc-spacing-1); }
+.tc-stack--gap-sm { gap: var(--tc-spacing-2); }
+.tc-stack--gap-md { gap: var(--tc-spacing-4); }
+.tc-stack--gap-lg { gap: var(--tc-spacing-6); }
+.tc-stack--gap-xl { gap: var(--tc-spacing-8); }
+
+/* Stack align (horizontal) */
+.tc-stack--align-start { align-items: flex-start; }
+.tc-stack--align-center { align-items: center; }
+.tc-stack--align-end { align-items: flex-end; }
+.tc-stack--align-stretch { align-items: stretch; }
+
+/* Stack justify (vertical) */
+.tc-stack--justify-start { justify-content: flex-start; }
+.tc-stack--justify-center { justify-content: center; }
+.tc-stack--justify-end { justify-content: flex-end; }
+.tc-stack--justify-between { justify-content: space-between; }
+.tc-stack--justify-around { justify-content: space-around; }
+
+/* ============================================
+ * ROW
+ * ============================================ */
+
+.tc-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tc-row--wrap {
+  flex-wrap: wrap;
+}
+
+/* Row gaps */
+.tc-row--gap-none { gap: 0; }
+.tc-row--gap-xs { gap: var(--tc-spacing-1); }
+.tc-row--gap-sm { gap: var(--tc-spacing-2); }
+.tc-row--gap-md { gap: var(--tc-spacing-3); }
+.tc-row--gap-lg { gap: var(--tc-spacing-4); }
+.tc-row--gap-xl { gap: var(--tc-spacing-6); }
+
+/* Row align (vertical) */
+.tc-row--align-start { align-items: flex-start; }
+.tc-row--align-center { align-items: center; }
+.tc-row--align-end { align-items: flex-end; }
+.tc-row--align-stretch { align-items: stretch; }
+.tc-row--align-baseline { align-items: baseline; }
+
+/* Row justify (horizontal) */
+.tc-row--justify-start { justify-content: flex-start; }
+.tc-row--justify-center { justify-content: center; }
+.tc-row--justify-end { justify-content: flex-end; }
+.tc-row--justify-between { justify-content: space-between; }
+.tc-row--justify-around { justify-content: space-around; }
+
+/* ============================================
+ * GRID
+ * ============================================ */
+
+.tc-grid {
+  display: grid;
+}
+
+/* Fixed columns */
+.tc-grid--cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.tc-grid--cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tc-grid--cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tc-grid--cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.tc-grid--cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.tc-grid--cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+/* Auto columns */
+.tc-grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(var(--tc-grid-min-col-width, 250px), 1fr));
+}
+
+/* Grid gaps */
+.tc-grid--gap-none { gap: 0; }
+.tc-grid--gap-xs { gap: var(--tc-spacing-1); }
+.tc-grid--gap-sm { gap: var(--tc-spacing-2); }
+.tc-grid--gap-md { gap: var(--tc-spacing-4); }
+.tc-grid--gap-lg { gap: var(--tc-spacing-6); }
+.tc-grid--gap-xl { gap: var(--tc-spacing-8); }
+
+/* Responsive grid */
+@media (max-width: 768px) {
+  .tc-grid--cols-3,
+  .tc-grid--cols-4,
+  .tc-grid--cols-5,
+  .tc-grid--cols-6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .tc-grid--cols-2,
+  .tc-grid--cols-3,
+  .tc-grid--cols-4,
+  .tc-grid--cols-5,
+  .tc-grid--cols-6 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+ * GRID ITEM
+ * ============================================ */
+
+.tc-grid-item {
+  min-width: 0;
+}
+
+/* Column spans */
+.tc-grid-item--col-2 { grid-column: span 2; }
+.tc-grid-item--col-3 { grid-column: span 3; }
+.tc-grid-item--col-4 { grid-column: span 4; }
+.tc-grid-item--col-5 { grid-column: span 5; }
+.tc-grid-item--col-6 { grid-column: span 6; }
+
+/* Row spans */
+.tc-grid-item--row-2 { grid-row: span 2; }
+.tc-grid-item--row-3 { grid-row: span 3; }
+.tc-grid-item--row-4 { grid-row: span 4; }
+
+/* Responsive: reset spans on small screens */
+@media (max-width: 768px) {
+  .tc-grid-item--col-3,
+  .tc-grid-item--col-4,
+  .tc-grid-item--col-5,
+  .tc-grid-item--col-6 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .tc-grid-item--col-2,
+  .tc-grid-item--col-3,
+  .tc-grid-item--col-4,
+  .tc-grid-item--col-5,
+  .tc-grid-item--col-6 {
+    grid-column: span 1;
+  }
+
+  .tc-grid-item--row-2,
+  .tc-grid-item--row-3,
+  .tc-grid-item--row-4 {
+    grid-row: span 1;
+  }
+}
+
+/* ============================================
+ * SPACER
+ * ============================================ */
+
+.tc-spacer {
+  flex-shrink: 0;
+}
+
+.tc-spacer--vertical.tc-spacer--xs { height: var(--tc-spacing-1); }
+.tc-spacer--vertical.tc-spacer--sm { height: var(--tc-spacing-2); }
+.tc-spacer--vertical.tc-spacer--md { height: var(--tc-spacing-4); }
+.tc-spacer--vertical.tc-spacer--lg { height: var(--tc-spacing-6); }
+.tc-spacer--vertical.tc-spacer--xl { height: var(--tc-spacing-8); }
+.tc-spacer--vertical.tc-spacer--2xl { height: var(--tc-spacing-12); }
+.tc-spacer--vertical.tc-spacer--3xl { height: var(--tc-spacing-16); }
+
+.tc-spacer--horizontal.tc-spacer--xs { width: var(--tc-spacing-1); }
+.tc-spacer--horizontal.tc-spacer--sm { width: var(--tc-spacing-2); }
+.tc-spacer--horizontal.tc-spacer--md { width: var(--tc-spacing-4); }
+.tc-spacer--horizontal.tc-spacer--lg { width: var(--tc-spacing-6); }
+.tc-spacer--horizontal.tc-spacer--xl { width: var(--tc-spacing-8); }
+.tc-spacer--horizontal.tc-spacer--2xl { width: var(--tc-spacing-12); }
+.tc-spacer--horizontal.tc-spacer--3xl { width: var(--tc-spacing-16); }
+
+/* ============================================
+ * DIVIDER
+ * ============================================ */
+
+.tc-divider {
+  border: none;
+  background-color: var(--tc-border-primary);
+  flex-shrink: 0;
+}
+
+.tc-divider--horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.tc-divider--vertical {
+  width: 1px;
+  height: 100%;
+  align-self: stretch;
+}
+
+.tc-divider--spacing-none { margin: 0; }
+
+.tc-divider--horizontal.tc-divider--spacing-sm {
+  margin-top: var(--tc-spacing-2);
+  margin-bottom: var(--tc-spacing-2);
+}
+
+.tc-divider--horizontal.tc-divider--spacing-md {
+  margin-top: var(--tc-spacing-4);
+  margin-bottom: var(--tc-spacing-4);
+}
+
+.tc-divider--horizontal.tc-divider--spacing-lg {
+  margin-top: var(--tc-spacing-6);
+  margin-bottom: var(--tc-spacing-6);
+}
+
+.tc-divider--vertical.tc-divider--spacing-sm {
+  margin-left: var(--tc-spacing-2);
+  margin-right: var(--tc-spacing-2);
+}
+
+.tc-divider--vertical.tc-divider--spacing-md {
+  margin-left: var(--tc-spacing-4);
+  margin-right: var(--tc-spacing-4);
+}
+
+.tc-divider--vertical.tc-divider--spacing-lg {
+  margin-left: var(--tc-spacing-6);
+  margin-right: var(--tc-spacing-6);
+}

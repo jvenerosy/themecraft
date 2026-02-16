@@ -1,3 +1,6 @@
+// Layout
+export * from './Layout';
+
 // Components
 export * from './Button';
 export * from './Input';

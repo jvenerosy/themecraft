@@ -1,0 +1,356 @@
+/**
+ * ThemeCraft Utility Helpers
+ * Common utility classes for layout and styling
+ */
+
+/* ============================================
+ * SIZING
+ * ============================================ */
+
+.tc-full-height {
+  height: 100%;
+}
+
+.tc-full-width {
+  width: 100%;
+}
+
+.tc-full {
+  width: 100%;
+  height: 100%;
+}
+
+.tc-min-h-screen {
+  min-height: 100vh;
+}
+
+.tc-min-h-full {
+  min-height: 100%;
+}
+
+/* ============================================
+ * TEXT ALIGNMENT
+ * ============================================ */
+
+.tc-text-left {
+  text-align: left;
+}
+
+.tc-text-center {
+  text-align: center;
+}
+
+.tc-text-right {
+  text-align: right;
+}
+
+/* ============================================
+ * DISPLAY
+ * ============================================ */
+
+.tc-hidden {
+  display: none;
+}
+
+.tc-block {
+  display: block;
+}
+
+.tc-inline {
+  display: inline;
+}
+
+.tc-inline-block {
+  display: inline-block;
+}
+
+.tc-flex {
+  display: flex;
+}
+
+.tc-inline-flex {
+  display: inline-flex;
+}
+
+.tc-grid {
+  display: grid;
+}
+
+/* ============================================
+ * FLEX UTILITIES
+ * ============================================ */
+
+.tc-flex-1 {
+  flex: 1 1 0%;
+}
+
+.tc-flex-auto {
+  flex: 1 1 auto;
+}
+
+.tc-flex-none {
+  flex: none;
+}
+
+.tc-flex-grow {
+  flex-grow: 1;
+}
+
+.tc-flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+/* ============================================
+ * OVERFLOW
+ * ============================================ */
+
+.tc-overflow-auto {
+  overflow: auto;
+}
+
+.tc-overflow-hidden {
+  overflow: hidden;
+}
+
+.tc-overflow-scroll {
+  overflow: scroll;
+}
+
+.tc-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.tc-overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* ============================================
+ * POSITION
+ * ============================================ */
+
+.tc-relative {
+  position: relative;
+}
+
+.tc-absolute {
+  position: absolute;
+}
+
+.tc-fixed {
+  position: fixed;
+}
+
+.tc-sticky {
+  position: sticky;
+}
+
+.tc-inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* ============================================
+ * Z-INDEX
+ * ============================================ */
+
+.tc-z-0 { z-index: 0; }
+.tc-z-10 { z-index: 10; }
+.tc-z-20 { z-index: 20; }
+.tc-z-30 { z-index: 30; }
+.tc-z-40 { z-index: 40; }
+.tc-z-50 { z-index: 50; }
+
+/* ============================================
+ * CURSOR
+ * ============================================ */
+
+.tc-cursor-pointer {
+  cursor: pointer;
+}
+
+.tc-cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.tc-cursor-default {
+  cursor: default;
+}
+
+/* ============================================
+ * POINTER EVENTS
+ * ============================================ */
+
+.tc-pointer-events-none {
+  pointer-events: none;
+}
+
+.tc-pointer-events-auto {
+  pointer-events: auto;
+}
+
+/* ============================================
+ * USER SELECT
+ * ============================================ */
+
+.tc-select-none {
+  user-select: none;
+}
+
+.tc-select-text {
+  user-select: text;
+}
+
+.tc-select-all {
+  user-select: all;
+}
+
+/* ============================================
+ * VISIBILITY
+ * ============================================ */
+
+.tc-visible {
+  visibility: visible;
+}
+
+.tc-invisible {
+  visibility: hidden;
+}
+
+/* ============================================
+ * OPACITY
+ * ============================================ */
+
+.tc-opacity-0 { opacity: 0; }
+.tc-opacity-25 { opacity: 0.25; }
+.tc-opacity-50 { opacity: 0.5; }
+.tc-opacity-75 { opacity: 0.75; }
+.tc-opacity-100 { opacity: 1; }
+
+/* ============================================
+ * TRUNCATE
+ * ============================================ */
+
+.tc-truncate {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tc-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tc-line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================
+ * WHITESPACE
+ * ============================================ */
+
+.tc-whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.tc-whitespace-pre {
+  white-space: pre;
+}
+
+.tc-whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+/* ============================================
+ * WORD BREAK
+ * ============================================ */
+
+.tc-break-words {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.tc-break-all {
+  word-break: break-all;
+}
+
+/* ============================================
+ * BORDER RADIUS (uses tokens)
+ * ============================================ */
+
+.tc-rounded-none { border-radius: 0 !important; }
+.tc-rounded-sm { border-radius: var(--tc-radius-sm) !important; }
+.tc-rounded { border-radius: var(--tc-radius-md) !important; }
+.tc-rounded-lg { border-radius: var(--tc-radius-lg) !important; }
+.tc-rounded-xl { border-radius: var(--tc-radius-xl) !important; }
+.tc-rounded-full { border-radius: 9999px !important; }
+
+/* ============================================
+ * BACKGROUND COLORS
+ * ============================================ */
+
+.tc-bg-primary { background-color: var(--tc-primary-500) !important; color: white !important; }
+.tc-bg-secondary { background-color: var(--tc-gray-500) !important; color: white !important; }
+.tc-bg-success { background-color: var(--tc-success-500) !important; color: white !important; }
+.tc-bg-warning { background-color: var(--tc-warning-500) !important; color: var(--tc-gray-900) !important; }
+.tc-bg-error { background-color: var(--tc-error-500) !important; color: white !important; }
+.tc-bg-info { background-color: var(--tc-info-500) !important; color: white !important; }
+
+/* ============================================
+ * SHADOW (uses tokens)
+ * ============================================ */
+
+.tc-shadow-none { box-shadow: none !important; }
+.tc-shadow-sm { box-shadow: var(--tc-shadow-sm) !important; }
+.tc-shadow { box-shadow: var(--tc-shadow-md) !important; }
+.tc-shadow-lg { box-shadow: var(--tc-shadow-lg) !important; }
+.tc-shadow-xl { box-shadow: var(--tc-shadow-xl) !important; }
+
+/* ============================================
+ * SCREEN READER ONLY
+ * ============================================ */
+
+.tc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+ * RESPONSIVE VISIBILITY
+ * ============================================ */
+
+@media (max-width: 640px) {
+  .tc-hidden-mobile { display: none; }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tc-hidden-tablet { display: none; }
+}
+
+@media (min-width: 1025px) {
+  .tc-hidden-desktop { display: none; }
+}
+
+@media (max-width: 1024px) {
+  .tc-hidden-below-desktop { display: none; }
+}
+
+@media (min-width: 641px) {
+  .tc-hidden-above-mobile { display: none; }
+}

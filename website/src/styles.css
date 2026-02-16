@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--tc-font-sans);
+  background-color: var(--tc-bg-primary);
+  color: var(--tc-fg-primary);
+  line-height: 1.6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--tc-bg-primary);
+  border-bottom: 1px solid var(--tc-border-primary);
+}
+
+/* Hero */
+.hero-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--tc-fg-primary) 0%, var(--tc-primary-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  text-align: center;
+  max-width: 540px;
+}
