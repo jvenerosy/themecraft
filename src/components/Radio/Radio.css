@@ -1,0 +1,160 @@
+/**
+ * Radio Component Styles
+ */
+
+.tc-radio {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--tc-spacing-2);
+  cursor: pointer;
+}
+
+.tc-radio--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.tc-radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tc-radio__control {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tc-bg-primary);
+  border: var(--tc-border-2) solid var(--tc-border-secondary);
+  border-radius: var(--tc-radius-full);
+  transition:
+    background-color var(--tc-transition-fast),
+    border-color var(--tc-transition-fast),
+    box-shadow var(--tc-transition-fast);
+}
+
+/* Sizes */
+.tc-radio--xs .tc-radio__control {
+  width: 14px;
+  height: 14px;
+}
+
+.tc-radio--sm .tc-radio__control {
+  width: 16px;
+  height: 16px;
+}
+
+.tc-radio--md .tc-radio__control {
+  width: 18px;
+  height: 18px;
+}
+
+.tc-radio--lg .tc-radio__control {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover */
+.tc-radio:hover:not(.tc-radio--disabled) .tc-radio__control {
+  border-color: var(--tc-interactive-primary);
+}
+
+/* Focus */
+.tc-radio__input:focus-visible + .tc-radio__control {
+  box-shadow: var(--tc-focus-ring);
+}
+
+/* Checked */
+.tc-radio__input:checked + .tc-radio__control {
+  border-color: var(--tc-interactive-primary);
+}
+
+/* Error */
+.tc-radio--error .tc-radio__control {
+  border-color: var(--tc-status-error);
+}
+
+/* Dot */
+.tc-radio__dot {
+  background-color: var(--tc-interactive-primary);
+  border-radius: var(--tc-radius-full);
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    opacity var(--tc-transition-fast),
+    transform var(--tc-transition-fast);
+}
+
+.tc-radio--xs .tc-radio__dot {
+  width: 6px;
+  height: 6px;
+}
+
+.tc-radio--sm .tc-radio__dot {
+  width: 7px;
+  height: 7px;
+}
+
+.tc-radio--md .tc-radio__dot {
+  width: 8px;
+  height: 8px;
+}
+
+.tc-radio--lg .tc-radio__dot {
+  width: 9px;
+  height: 9px;
+}
+
+.tc-radio__input:checked + .tc-radio__control .tc-radio__dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Label area */
+.tc-radio__label-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tc-spacing-0-5);
+}
+
+.tc-radio__label {
+  font-size: var(--tc-text-sm);
+  font-weight: var(--tc-font-medium);
+  color: var(--tc-fg-primary);
+  line-height: 1.25;
+}
+
+.tc-radio--xs .tc-radio__label {
+  font-size: var(--tc-text-xs);
+}
+
+.tc-radio--lg .tc-radio__label {
+  font-size: var(--tc-text-base);
+}
+
+.tc-radio__description {
+  font-size: var(--tc-text-xs);
+  color: var(--tc-fg-secondary);
+}
+
+/* Radio Group */
+.tc-radio-group {
+  display: flex;
+  gap: var(--tc-spacing-3);
+}
+
+.tc-radio-group--vertical {
+  flex-direction: column;
+}
+
+.tc-radio-group--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}

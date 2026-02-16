@@ -1,0 +1,53 @@
+/**
+ * ThemeCraft Dark Theme
+ * Dark mode colors
+ */
+
+[data-theme='dark'] {
+  /* Background colors */
+  --tc-bg-primary: var(--tc-gray-900);
+  --tc-bg-secondary: var(--tc-gray-800);
+  --tc-bg-tertiary: var(--tc-gray-700);
+  --tc-bg-inverse: var(--tc-white);
+  --tc-bg-disabled: var(--tc-gray-800);
+
+  /* Foreground/Text colors */
+  --tc-fg-primary: var(--tc-gray-50);
+  --tc-fg-secondary: var(--tc-gray-300);
+  --tc-fg-tertiary: var(--tc-gray-400);
+  --tc-fg-inverse: var(--tc-gray-900);
+  --tc-fg-disabled: var(--tc-gray-600);
+  --tc-fg-placeholder: var(--tc-gray-500);
+
+  /* Border colors */
+  --tc-border-primary: var(--tc-gray-700);
+  --tc-border-secondary: var(--tc-gray-600);
+
+  /* Interactive colors */
+  --tc-interactive-secondary: var(--tc-gray-800);
+  --tc-interactive-secondary-hover: var(--tc-gray-700);
+  --tc-interactive-secondary-active: var(--tc-gray-600);
+
+  /* Status background colors - darker variants */
+  --tc-status-success-bg: var(--tc-success-950);
+  --tc-status-success-border: var(--tc-success-800);
+  --tc-status-warning-bg: var(--tc-warning-950);
+  --tc-status-warning-border: var(--tc-warning-800);
+  --tc-status-error-bg: var(--tc-error-950);
+  --tc-status-error-border: var(--tc-error-800);
+  --tc-status-info-bg: var(--tc-info-950);
+  --tc-status-info-border: var(--tc-info-800);
+
+  /* Shadows - more subtle in dark mode */
+  --tc-shadow-color: rgb(0 0 0 / 0.3);
+
+  /* Focus ring offset color */
+  --tc-focus-ring-offset-color: var(--tc-gray-900);
+  --tc-focus-ring: 0 0 0 var(--tc-focus-ring-offset) var(--tc-focus-ring-offset-color),
+    0 0 0 calc(var(--tc-focus-ring-offset) + var(--tc-focus-ring-width)) var(--tc-focus-ring-color);
+
+  /* Overlay */
+  --tc-overlay-bg: rgb(0 0 0 / 0.7);
+
+  color-scheme: dark;
+}

@@ -1,0 +1,109 @@
+/**
+ * Accordion Component Styles
+ */
+
+.tc-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default variant */
+.tc-accordion--default .tc-accordion__item {
+  border-bottom: var(--tc-border-1) solid var(--tc-border-primary);
+}
+
+.tc-accordion--default .tc-accordion__item:last-child {
+  border-bottom: none;
+}
+
+/* Bordered variant */
+.tc-accordion--bordered {
+  border: var(--tc-border-1) solid var(--tc-border-primary);
+  border-radius: var(--tc-radius-lg);
+}
+
+.tc-accordion--bordered .tc-accordion__item {
+  border-bottom: var(--tc-border-1) solid var(--tc-border-primary);
+}
+
+.tc-accordion--bordered .tc-accordion__item:last-child {
+  border-bottom: none;
+}
+
+/* Separated variant */
+.tc-accordion--separated {
+  gap: var(--tc-spacing-2);
+}
+
+.tc-accordion--separated .tc-accordion__item {
+  border: var(--tc-border-1) solid var(--tc-border-primary);
+  border-radius: var(--tc-radius-lg);
+}
+
+/* Trigger */
+.tc-accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--tc-spacing-4);
+  background: none;
+  border: none;
+  font-family: var(--tc-font-sans);
+  font-size: var(--tc-text-sm);
+  font-weight: var(--tc-font-medium);
+  color: var(--tc-fg-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--tc-transition-fast);
+}
+
+.tc-accordion__trigger:hover:not(:disabled) {
+  background-color: var(--tc-interactive-secondary);
+}
+
+.tc-accordion__trigger:focus-visible {
+  outline: none;
+  box-shadow: inset var(--tc-focus-ring);
+}
+
+.tc-accordion__trigger:disabled {
+  color: var(--tc-fg-disabled);
+  cursor: not-allowed;
+}
+
+/* Icon */
+.tc-accordion__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--tc-fg-tertiary);
+  transition: transform var(--tc-transition-fast);
+}
+
+.tc-accordion__item--expanded .tc-accordion__icon {
+  transform: rotate(180deg);
+}
+
+/* Content */
+.tc-accordion__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--tc-transition-normal);
+}
+
+.tc-accordion__item--expanded .tc-accordion__content {
+  grid-template-rows: 1fr;
+}
+
+.tc-accordion__content-inner {
+  overflow: hidden;
+}
+
+.tc-accordion__panel {
+  padding: 0 var(--tc-spacing-4) var(--tc-spacing-4);
+  font-size: var(--tc-text-sm);
+  color: var(--tc-fg-secondary);
+}

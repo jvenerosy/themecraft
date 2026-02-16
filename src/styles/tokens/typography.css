@@ -1,0 +1,66 @@
+/**
+ * ThemeCraft Typography Tokens
+ * Font families, sizes, weights, and line heights
+ */
+
+:root {
+  /* Font families */
+  --tc-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --tc-font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --tc-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  /* Font sizes */
+  --tc-text-xs: 0.75rem;     /* 12px */
+  --tc-text-sm: 0.875rem;    /* 14px */
+  --tc-text-base: 1rem;      /* 16px */
+  --tc-text-lg: 1.125rem;    /* 18px */
+  --tc-text-xl: 1.25rem;     /* 20px */
+  --tc-text-2xl: 1.5rem;     /* 24px */
+  --tc-text-3xl: 1.875rem;   /* 30px */
+  --tc-text-4xl: 2.25rem;    /* 36px */
+  --tc-text-5xl: 3rem;       /* 48px */
+  --tc-text-6xl: 3.75rem;    /* 60px */
+  --tc-text-7xl: 4.5rem;     /* 72px */
+  --tc-text-8xl: 6rem;       /* 96px */
+  --tc-text-9xl: 8rem;       /* 128px */
+
+  /* Font weights */
+  --tc-font-thin: 100;
+  --tc-font-extralight: 200;
+  --tc-font-light: 300;
+  --tc-font-normal: 400;
+  --tc-font-medium: 500;
+  --tc-font-semibold: 600;
+  --tc-font-bold: 700;
+  --tc-font-extrabold: 800;
+  --tc-font-black: 900;
+
+  /* Line heights */
+  --tc-leading-none: 1;
+  --tc-leading-tight: 1.25;
+  --tc-leading-snug: 1.375;
+  --tc-leading-normal: 1.5;
+  --tc-leading-relaxed: 1.625;
+  --tc-leading-loose: 2;
+
+  /* Line heights - fixed */
+  --tc-leading-3: 0.75rem;   /* 12px */
+  --tc-leading-4: 1rem;      /* 16px */
+  --tc-leading-5: 1.25rem;   /* 20px */
+  --tc-leading-6: 1.5rem;    /* 24px */
+  --tc-leading-7: 1.75rem;   /* 28px */
+  --tc-leading-8: 2rem;      /* 32px */
+  --tc-leading-9: 2.25rem;   /* 36px */
+  --tc-leading-10: 2.5rem;   /* 40px */
+
+  /* Letter spacing */
+  --tc-tracking-tighter: -0.05em;
+  --tc-tracking-tight: -0.025em;
+  --tc-tracking-normal: 0em;
+  --tc-tracking-wide: 0.025em;
+  --tc-tracking-wider: 0.05em;
+  --tc-tracking-widest: 0.1em;
+}

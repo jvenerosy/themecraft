@@ -1,0 +1,55 @@
+/**
+ * ThemeCraft Spacing Tokens
+ * Consistent spacing scale based on 4px base unit
+ */
+
+:root {
+  /* Base unit */
+  --tc-spacing-unit: 4px;
+
+  /* Spacing scale */
+  --tc-spacing-0: 0;
+  --tc-spacing-px: 1px;
+  --tc-spacing-0-5: calc(var(--tc-spacing-unit) * 0.5);   /* 2px */
+  --tc-spacing-1: var(--tc-spacing-unit);                  /* 4px */
+  --tc-spacing-1-5: calc(var(--tc-spacing-unit) * 1.5);   /* 6px */
+  --tc-spacing-2: calc(var(--tc-spacing-unit) * 2);       /* 8px */
+  --tc-spacing-2-5: calc(var(--tc-spacing-unit) * 2.5);   /* 10px */
+  --tc-spacing-3: calc(var(--tc-spacing-unit) * 3);       /* 12px */
+  --tc-spacing-3-5: calc(var(--tc-spacing-unit) * 3.5);   /* 14px */
+  --tc-spacing-4: calc(var(--tc-spacing-unit) * 4);       /* 16px */
+  --tc-spacing-5: calc(var(--tc-spacing-unit) * 5);       /* 20px */
+  --tc-spacing-6: calc(var(--tc-spacing-unit) * 6);       /* 24px */
+  --tc-spacing-7: calc(var(--tc-spacing-unit) * 7);       /* 28px */
+  --tc-spacing-8: calc(var(--tc-spacing-unit) * 8);       /* 32px */
+  --tc-spacing-9: calc(var(--tc-spacing-unit) * 9);       /* 36px */
+  --tc-spacing-10: calc(var(--tc-spacing-unit) * 10);     /* 40px */
+  --tc-spacing-11: calc(var(--tc-spacing-unit) * 11);     /* 44px */
+  --tc-spacing-12: calc(var(--tc-spacing-unit) * 12);     /* 48px */
+  --tc-spacing-14: calc(var(--tc-spacing-unit) * 14);     /* 56px */
+  --tc-spacing-16: calc(var(--tc-spacing-unit) * 16);     /* 64px */
+  --tc-spacing-20: calc(var(--tc-spacing-unit) * 20);     /* 80px */
+  --tc-spacing-24: calc(var(--tc-spacing-unit) * 24);     /* 96px */
+  --tc-spacing-28: calc(var(--tc-spacing-unit) * 28);     /* 112px */
+  --tc-spacing-32: calc(var(--tc-spacing-unit) * 32);     /* 128px */
+  --tc-spacing-36: calc(var(--tc-spacing-unit) * 36);     /* 144px */
+  --tc-spacing-40: calc(var(--tc-spacing-unit) * 40);     /* 160px */
+  --tc-spacing-44: calc(var(--tc-spacing-unit) * 44);     /* 176px */
+  --tc-spacing-48: calc(var(--tc-spacing-unit) * 48);     /* 192px */
+  --tc-spacing-52: calc(var(--tc-spacing-unit) * 52);     /* 208px */
+  --tc-spacing-56: calc(var(--tc-spacing-unit) * 56);     /* 224px */
+  --tc-spacing-60: calc(var(--tc-spacing-unit) * 60);     /* 240px */
+  --tc-spacing-64: calc(var(--tc-spacing-unit) * 64);     /* 256px */
+  --tc-spacing-72: calc(var(--tc-spacing-unit) * 72);     /* 288px */
+  --tc-spacing-80: calc(var(--tc-spacing-unit) * 80);     /* 320px */
+  --tc-spacing-96: calc(var(--tc-spacing-unit) * 96);     /* 384px */
+
+  /* Semantic spacing */
+  --tc-spacing-xs: var(--tc-spacing-1);    /* 4px - tight spacing */
+  --tc-spacing-sm: var(--tc-spacing-2);    /* 8px - small spacing */
+  --tc-spacing-md: var(--tc-spacing-4);    /* 16px - medium spacing */
+  --tc-spacing-lg: var(--tc-spacing-6);    /* 24px - large spacing */
+  --tc-spacing-xl: var(--tc-spacing-8);    /* 32px - extra large */
+  --tc-spacing-2xl: var(--tc-spacing-12);  /* 48px - 2x extra large */
+  --tc-spacing-3xl: var(--tc-spacing-16);  /* 64px - 3x extra large */
+}

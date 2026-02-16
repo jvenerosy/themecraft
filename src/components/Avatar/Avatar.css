@@ -1,0 +1,150 @@
+/**
+ * Avatar Component Styles
+ */
+
+.tc-avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: var(--tc-interactive-secondary);
+  color: var(--tc-fg-secondary);
+  font-family: var(--tc-font-sans);
+  font-weight: var(--tc-font-medium);
+  user-select: none;
+}
+
+.tc-avatar--circle {
+  border-radius: var(--tc-radius-full);
+}
+
+.tc-avatar--square {
+  border-radius: var(--tc-radius-lg);
+}
+
+/* Sizes */
+.tc-avatar--xs {
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.tc-avatar--sm {
+  width: 32px;
+  height: 32px;
+  font-size: var(--tc-text-xs);
+}
+
+.tc-avatar--md {
+  width: 40px;
+  height: 40px;
+  font-size: var(--tc-text-sm);
+}
+
+.tc-avatar--lg {
+  width: 48px;
+  height: 48px;
+  font-size: var(--tc-text-base);
+}
+
+.tc-avatar--xl {
+  width: 64px;
+  height: 64px;
+  font-size: var(--tc-text-xl);
+}
+
+/* Image */
+.tc-avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fallback */
+.tc-avatar__fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+/* Status indicator */
+.tc-avatar__status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid var(--tc-bg-primary);
+  border-radius: var(--tc-radius-full);
+}
+
+.tc-avatar--xs .tc-avatar__status {
+  width: 8px;
+  height: 8px;
+}
+
+.tc-avatar--sm .tc-avatar__status {
+  width: 10px;
+  height: 10px;
+}
+
+.tc-avatar--md .tc-avatar__status {
+  width: 12px;
+  height: 12px;
+}
+
+.tc-avatar--lg .tc-avatar__status {
+  width: 14px;
+  height: 14px;
+}
+
+.tc-avatar--xl .tc-avatar__status {
+  width: 16px;
+  height: 16px;
+}
+
+.tc-avatar__status--online {
+  background-color: var(--tc-status-success);
+}
+
+.tc-avatar__status--offline {
+  background-color: var(--tc-gray-400);
+}
+
+.tc-avatar__status--away {
+  background-color: var(--tc-status-warning);
+}
+
+.tc-avatar__status--busy {
+  background-color: var(--tc-status-error);
+}
+
+/* Avatar Group */
+.tc-avatar-group {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.tc-avatar-group > .tc-avatar {
+  margin-left: -8px;
+  border: 2px solid var(--tc-bg-primary);
+}
+
+.tc-avatar-group > .tc-avatar:last-child {
+  margin-left: 0;
+}
+
+.tc-avatar-group__overflow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tc-bg-tertiary);
+  color: var(--tc-fg-secondary);
+  font-weight: var(--tc-font-medium);
+  border: 2px solid var(--tc-bg-primary);
+  margin-left: -8px;
+}

@@ -1,0 +1,87 @@
+/**
+ * ThemeCraft Base Theme
+ * Semantic tokens that reference primitives
+ * These are the tokens components should use
+ */
+
+:root {
+  /* ============================================
+   * SEMANTIC COLOR TOKENS
+   * ============================================ */
+
+  /* Background colors */
+  --tc-bg-primary: var(--tc-white);
+  --tc-bg-secondary: var(--tc-gray-50);
+  --tc-bg-tertiary: var(--tc-gray-100);
+  --tc-bg-inverse: var(--tc-gray-900);
+  --tc-bg-disabled: var(--tc-gray-100);
+
+  /* Foreground/Text colors */
+  --tc-fg-primary: var(--tc-gray-900);
+  --tc-fg-secondary: var(--tc-gray-600);
+  --tc-fg-tertiary: var(--tc-gray-500);
+  --tc-fg-inverse: var(--tc-white);
+  --tc-fg-disabled: var(--tc-gray-400);
+  --tc-fg-placeholder: var(--tc-gray-400);
+
+  /* Border colors */
+  --tc-border-primary: var(--tc-gray-200);
+  --tc-border-secondary: var(--tc-gray-300);
+  --tc-border-focus: var(--tc-primary-500);
+  --tc-border-error: var(--tc-error-500);
+  --tc-border-success: var(--tc-success-500);
+
+  /* Interactive colors */
+  --tc-interactive-primary: var(--tc-primary-500);
+  --tc-interactive-primary-hover: var(--tc-primary-600);
+  --tc-interactive-primary-active: var(--tc-primary-700);
+  --tc-interactive-secondary: var(--tc-gray-100);
+  --tc-interactive-secondary-hover: var(--tc-gray-200);
+  --tc-interactive-secondary-active: var(--tc-gray-300);
+
+  /* Status colors */
+  --tc-status-success: var(--tc-success-500);
+  --tc-status-success-bg: var(--tc-success-50);
+  --tc-status-success-border: var(--tc-success-200);
+  --tc-status-warning: var(--tc-warning-500);
+  --tc-status-warning-bg: var(--tc-warning-50);
+  --tc-status-warning-border: var(--tc-warning-200);
+  --tc-status-error: var(--tc-error-500);
+  --tc-status-error-bg: var(--tc-error-50);
+  --tc-status-error-border: var(--tc-error-200);
+  --tc-status-info: var(--tc-info-500);
+  --tc-status-info-bg: var(--tc-info-50);
+  --tc-status-info-border: var(--tc-info-200);
+
+  /* ============================================
+   * COMPONENT-LEVEL TOKENS
+   * ============================================ */
+
+  /* Focus ring */
+  --tc-focus-ring-color: var(--tc-primary-500);
+  --tc-focus-ring-offset: 2px;
+  --tc-focus-ring-width: 2px;
+  --tc-focus-ring: 0 0 0 var(--tc-focus-ring-offset) var(--tc-bg-primary),
+    0 0 0 calc(var(--tc-focus-ring-offset) + var(--tc-focus-ring-width)) var(--tc-focus-ring-color);
+
+  /* Overlay */
+  --tc-overlay-bg: rgb(0 0 0 / 0.5);
+
+  /* ============================================
+   * TRANSITION TOKENS
+   * ============================================ */
+  --tc-transition-fast: 150ms ease;
+  --tc-transition-normal: 200ms ease;
+  --tc-transition-slow: 300ms ease;
+
+  /* ============================================
+   * Z-INDEX SCALE
+   * ============================================ */
+  --tc-z-dropdown: 1000;
+  --tc-z-sticky: 1100;
+  --tc-z-fixed: 1200;
+  --tc-z-modal-backdrop: 1300;
+  --tc-z-modal: 1400;
+  --tc-z-popover: 1500;
+  --tc-z-tooltip: 1600;
+}

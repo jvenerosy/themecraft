@@ -1,0 +1,29 @@
+/**
+ * ThemeCraft Ocean Accent Preset
+ * Cool blue tones
+ */
+
+[data-accent='ocean'],
+:root {
+  /* Primary palette - Ocean Blue */
+  --tc-primary-50: #eff6ff;
+  --tc-primary-100: #dbeafe;
+  --tc-primary-200: #bfdbfe;
+  --tc-primary-300: #93c5fd;
+  --tc-primary-400: #60a5fa;
+  --tc-primary-500: #3b82f6;
+  --tc-primary-600: #2563eb;
+  --tc-primary-700: #1d4ed8;
+  --tc-primary-800: #1e40af;
+  --tc-primary-900: #1e3a8a;
+  --tc-primary-950: #172554;
+
+  /* Interactive colors */
+  --tc-interactive-primary: var(--tc-primary-500);
+  --tc-interactive-primary-hover: var(--tc-primary-600);
+  --tc-interactive-primary-active: var(--tc-primary-700);
+
+  /* Focus */
+  --tc-focus-ring-color: var(--tc-primary-500);
+  --tc-border-focus: var(--tc-primary-500);
+}

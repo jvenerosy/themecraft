@@ -1,0 +1,370 @@
+/**
+ * Button Component Styles
+ * Uses CSS custom properties for theming
+ */
+
+.tc-button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--tc-spacing-2);
+
+  /* Typography */
+  font-family: var(--tc-font-sans);
+  font-weight: var(--tc-font-medium);
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Borders */
+  border: var(--tc-border-1) solid transparent;
+  border-radius: var(--tc-radius-button);
+
+  /* Transitions */
+  transition:
+    background-color var(--tc-transition-fast),
+    border-color var(--tc-transition-fast),
+    color var(--tc-transition-fast),
+    box-shadow var(--tc-transition-fast);
+
+  /* Cursor */
+  cursor: pointer;
+  user-select: none;
+
+  /* Focus */
+  outline: none;
+}
+
+.tc-button:focus-visible {
+  box-shadow: var(--tc-focus-ring);
+}
+
+/* ============================================
+ * SIZES
+ * ============================================ */
+
+.tc-button--xs {
+  height: var(--tc-spacing-6);
+  padding: 0 var(--tc-spacing-2);
+  font-size: var(--tc-text-xs);
+  gap: var(--tc-spacing-1);
+}
+
+.tc-button--sm {
+  height: var(--tc-spacing-8);
+  padding: 0 var(--tc-spacing-3);
+  font-size: var(--tc-text-sm);
+  gap: var(--tc-spacing-1-5);
+}
+
+.tc-button--md {
+  height: var(--tc-spacing-10);
+  padding: 0 var(--tc-spacing-4);
+  font-size: var(--tc-text-sm);
+}
+
+.tc-button--lg {
+  height: var(--tc-spacing-11);
+  padding: 0 var(--tc-spacing-5);
+  font-size: var(--tc-text-base);
+}
+
+.tc-button--xl {
+  height: var(--tc-spacing-12);
+  padding: 0 var(--tc-spacing-6);
+  font-size: var(--tc-text-lg);
+  gap: var(--tc-spacing-2-5);
+}
+
+/* ============================================
+ * SOLID VARIANT
+ * ============================================ */
+
+.tc-button--solid {
+  color: var(--tc-fg-inverse);
+}
+
+.tc-button--solid.tc-button--primary {
+  background-color: var(--tc-interactive-primary);
+}
+
+.tc-button--solid.tc-button--primary:hover:not(:disabled) {
+  background-color: var(--tc-interactive-primary-hover);
+}
+
+.tc-button--solid.tc-button--primary:active:not(:disabled) {
+  background-color: var(--tc-interactive-primary-active);
+}
+
+.tc-button--solid.tc-button--secondary {
+  background-color: var(--tc-gray-600);
+}
+
+.tc-button--solid.tc-button--secondary:hover:not(:disabled) {
+  background-color: var(--tc-gray-700);
+}
+
+.tc-button--solid.tc-button--secondary:active:not(:disabled) {
+  background-color: var(--tc-gray-800);
+}
+
+.tc-button--solid.tc-button--success {
+  background-color: var(--tc-status-success);
+}
+
+.tc-button--solid.tc-button--success:hover:not(:disabled) {
+  background-color: var(--tc-success-600);
+}
+
+.tc-button--solid.tc-button--success:active:not(:disabled) {
+  background-color: var(--tc-success-700);
+}
+
+.tc-button--solid.tc-button--warning {
+  background-color: var(--tc-status-warning);
+  color: var(--tc-gray-900);
+}
+
+.tc-button--solid.tc-button--warning:hover:not(:disabled) {
+  background-color: var(--tc-warning-600);
+}
+
+.tc-button--solid.tc-button--warning:active:not(:disabled) {
+  background-color: var(--tc-warning-700);
+}
+
+.tc-button--solid.tc-button--error {
+  background-color: var(--tc-status-error);
+}
+
+.tc-button--solid.tc-button--error:hover:not(:disabled) {
+  background-color: var(--tc-error-600);
+}
+
+.tc-button--solid.tc-button--error:active:not(:disabled) {
+  background-color: var(--tc-error-700);
+}
+
+.tc-button--solid.tc-button--info {
+  background-color: var(--tc-status-info);
+}
+
+.tc-button--solid.tc-button--info:hover:not(:disabled) {
+  background-color: var(--tc-info-600);
+}
+
+.tc-button--solid.tc-button--info:active:not(:disabled) {
+  background-color: var(--tc-info-700);
+}
+
+/* ============================================
+ * OUTLINE VARIANT
+ * ============================================ */
+
+.tc-button--outline {
+  background-color: transparent;
+}
+
+.tc-button--outline.tc-button--primary {
+  border-color: var(--tc-interactive-primary);
+  color: var(--tc-interactive-primary);
+}
+
+.tc-button--outline.tc-button--primary:hover:not(:disabled) {
+  background-color: var(--tc-primary-50);
+}
+
+.tc-button--outline.tc-button--secondary {
+  border-color: var(--tc-border-secondary);
+  color: var(--tc-fg-primary);
+}
+
+.tc-button--outline.tc-button--secondary:hover:not(:disabled) {
+  background-color: var(--tc-interactive-secondary);
+}
+
+.tc-button--outline.tc-button--success {
+  border-color: var(--tc-status-success);
+  color: var(--tc-status-success);
+}
+
+.tc-button--outline.tc-button--success:hover:not(:disabled) {
+  background-color: var(--tc-status-success-bg);
+}
+
+.tc-button--outline.tc-button--warning {
+  border-color: var(--tc-status-warning);
+  color: var(--tc-status-warning);
+}
+
+.tc-button--outline.tc-button--warning:hover:not(:disabled) {
+  background-color: var(--tc-status-warning-bg);
+}
+
+.tc-button--outline.tc-button--error {
+  border-color: var(--tc-status-error);
+  color: var(--tc-status-error);
+}
+
+.tc-button--outline.tc-button--error:hover:not(:disabled) {
+  background-color: var(--tc-status-error-bg);
+}
+
+.tc-button--outline.tc-button--info {
+  border-color: var(--tc-status-info);
+  color: var(--tc-status-info);
+}
+
+.tc-button--outline.tc-button--info:hover:not(:disabled) {
+  background-color: var(--tc-status-info-bg);
+}
+
+/* ============================================
+ * GHOST VARIANT
+ * ============================================ */
+
+.tc-button--ghost {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.tc-button--ghost.tc-button--primary {
+  color: var(--tc-interactive-primary);
+}
+
+.tc-button--ghost.tc-button--primary:hover:not(:disabled) {
+  background-color: var(--tc-primary-50);
+}
+
+.tc-button--ghost.tc-button--secondary {
+  color: var(--tc-fg-primary);
+}
+
+.tc-button--ghost.tc-button--secondary:hover:not(:disabled) {
+  background-color: var(--tc-interactive-secondary);
+}
+
+.tc-button--ghost.tc-button--success {
+  color: var(--tc-status-success);
+}
+
+.tc-button--ghost.tc-button--success:hover:not(:disabled) {
+  background-color: var(--tc-status-success-bg);
+}
+
+.tc-button--ghost.tc-button--warning {
+  color: var(--tc-status-warning);
+}
+
+.tc-button--ghost.tc-button--warning:hover:not(:disabled) {
+  background-color: var(--tc-status-warning-bg);
+}
+
+.tc-button--ghost.tc-button--error {
+  color: var(--tc-status-error);
+}
+
+.tc-button--ghost.tc-button--error:hover:not(:disabled) {
+  background-color: var(--tc-status-error-bg);
+}
+
+.tc-button--ghost.tc-button--info {
+  color: var(--tc-status-info);
+}
+
+.tc-button--ghost.tc-button--info:hover:not(:disabled) {
+  background-color: var(--tc-status-info-bg);
+}
+
+/* ============================================
+ * LINK VARIANT
+ * ============================================ */
+
+.tc-button--link {
+  background-color: transparent;
+  border-color: transparent;
+  height: auto;
+  padding: 0;
+}
+
+.tc-button--link.tc-button--primary {
+  color: var(--tc-interactive-primary);
+}
+
+.tc-button--link.tc-button--primary:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.tc-button--link.tc-button--secondary {
+  color: var(--tc-fg-secondary);
+}
+
+.tc-button--link.tc-button--secondary:hover:not(:disabled) {
+  color: var(--tc-fg-primary);
+  text-decoration: underline;
+}
+
+/* ============================================
+ * STATES
+ * ============================================ */
+
+.tc-button:disabled,
+.tc-button--loading {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.tc-button--full-width {
+  width: 100%;
+}
+
+/* ============================================
+ * ICONS
+ * ============================================ */
+
+.tc-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tc-button__spinner {
+  animation: tc-spin 1s linear infinite;
+}
+
+@keyframes tc-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .tc-button--outline.tc-button--primary:hover:not(:disabled),
+[data-theme='dark'] .tc-button--ghost.tc-button--primary:hover:not(:disabled) {
+  background-color: var(--tc-primary-950);
+}
+
+[data-theme='dark'] .tc-button--outline.tc-button--success:hover:not(:disabled),
+[data-theme='dark'] .tc-button--ghost.tc-button--success:hover:not(:disabled) {
+  background-color: var(--tc-success-950);
+}
+
+[data-theme='dark'] .tc-button--outline.tc-button--warning:hover:not(:disabled),
+[data-theme='dark'] .tc-button--ghost.tc-button--warning:hover:not(:disabled) {
+  background-color: var(--tc-warning-950);
+}
+
+[data-theme='dark'] .tc-button--outline.tc-button--error:hover:not(:disabled),
+[data-theme='dark'] .tc-button--ghost.tc-button--error:hover:not(:disabled) {
+  background-color: var(--tc-error-950);
+}
+
+[data-theme='dark'] .tc-button--outline.tc-button--info:hover:not(:disabled),
+[data-theme='dark'] .tc-button--ghost.tc-button--info:hover:not(:disabled) {
+  background-color: var(--tc-info-950);
+}

@@ -1,0 +1,28 @@
+/**
+ * ThemeCraft Berry Accent Preset
+ * Rich purple/pink tones
+ */
+
+[data-accent='berry'] {
+  /* Primary palette - Berry Purple */
+  --tc-primary-50: #faf5ff;
+  --tc-primary-100: #f3e8ff;
+  --tc-primary-200: #e9d5ff;
+  --tc-primary-300: #d8b4fe;
+  --tc-primary-400: #c084fc;
+  --tc-primary-500: #a855f7;
+  --tc-primary-600: #9333ea;
+  --tc-primary-700: #7e22ce;
+  --tc-primary-800: #6b21a8;
+  --tc-primary-900: #581c87;
+  --tc-primary-950: #3b0764;
+
+  /* Interactive colors */
+  --tc-interactive-primary: var(--tc-primary-500);
+  --tc-interactive-primary-hover: var(--tc-primary-600);
+  --tc-interactive-primary-active: var(--tc-primary-700);
+
+  /* Focus */
+  --tc-focus-ring-color: var(--tc-primary-500);
+  --tc-border-focus: var(--tc-primary-500);
+}

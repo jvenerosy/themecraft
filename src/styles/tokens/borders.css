@@ -1,0 +1,32 @@
+/**
+ * ThemeCraft Border Tokens
+ * Border widths, radius, and styles
+ */
+
+:root {
+  /* Border widths */
+  --tc-border-0: 0px;
+  --tc-border-1: 1px;
+  --tc-border-2: 2px;
+  --tc-border-4: 4px;
+  --tc-border-8: 8px;
+
+  /* Border radius */
+  --tc-radius-none: 0;
+  --tc-radius-sm: 0.125rem;   /* 2px */
+  --tc-radius-md: 0.25rem;    /* 4px */
+  --tc-radius-lg: 0.375rem;   /* 6px */
+  --tc-radius-xl: 0.5rem;     /* 8px */
+  --tc-radius-2xl: 0.75rem;   /* 12px */
+  --tc-radius-3xl: 1rem;      /* 16px */
+  --tc-radius-4xl: 1.5rem;    /* 24px */
+  --tc-radius-full: 9999px;
+
+  /* Default border radius for components */
+  --tc-radius-button: var(--tc-radius-lg);
+  --tc-radius-input: var(--tc-radius-lg);
+  --tc-radius-card: var(--tc-radius-xl);
+  --tc-radius-modal: var(--tc-radius-2xl);
+  --tc-radius-badge: var(--tc-radius-full);
+  --tc-radius-avatar: var(--tc-radius-full);
+}

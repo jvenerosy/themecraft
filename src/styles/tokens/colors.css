@@ -1,0 +1,89 @@
+/**
+ * ThemeCraft Color Tokens
+ * Primitive color values - DO NOT use directly in components
+ * Use semantic tokens from themes/base.css instead
+ */
+
+:root {
+  /* Gray Scale */
+  --tc-gray-50: #f9fafb;
+  --tc-gray-100: #f3f4f6;
+  --tc-gray-200: #e5e7eb;
+  --tc-gray-300: #d1d5db;
+  --tc-gray-400: #9ca3af;
+  --tc-gray-500: #6b7280;
+  --tc-gray-600: #4b5563;
+  --tc-gray-700: #374151;
+  --tc-gray-800: #1f2937;
+  --tc-gray-900: #111827;
+  --tc-gray-950: #030712;
+
+  /* Primary - Blue (default) */
+  --tc-primary-50: #eff6ff;
+  --tc-primary-100: #dbeafe;
+  --tc-primary-200: #bfdbfe;
+  --tc-primary-300: #93c5fd;
+  --tc-primary-400: #60a5fa;
+  --tc-primary-500: #3b82f6;
+  --tc-primary-600: #2563eb;
+  --tc-primary-700: #1d4ed8;
+  --tc-primary-800: #1e40af;
+  --tc-primary-900: #1e3a8a;
+  --tc-primary-950: #172554;
+
+  /* Success - Green */
+  --tc-success-50: #f0fdf4;
+  --tc-success-100: #dcfce7;
+  --tc-success-200: #bbf7d0;
+  --tc-success-300: #86efac;
+  --tc-success-400: #4ade80;
+  --tc-success-500: #22c55e;
+  --tc-success-600: #16a34a;
+  --tc-success-700: #15803d;
+  --tc-success-800: #166534;
+  --tc-success-900: #14532d;
+  --tc-success-950: #052e16;
+
+  /* Warning - Amber */
+  --tc-warning-50: #fffbeb;
+  --tc-warning-100: #fef3c7;
+  --tc-warning-200: #fde68a;
+  --tc-warning-300: #fcd34d;
+  --tc-warning-400: #fbbf24;
+  --tc-warning-500: #f59e0b;
+  --tc-warning-600: #d97706;
+  --tc-warning-700: #b45309;
+  --tc-warning-800: #92400e;
+  --tc-warning-900: #78350f;
+  --tc-warning-950: #451a03;
+
+  /* Error - Red */
+  --tc-error-50: #fef2f2;
+  --tc-error-100: #fee2e2;
+  --tc-error-200: #fecaca;
+  --tc-error-300: #fca5a5;
+  --tc-error-400: #f87171;
+  --tc-error-500: #ef4444;
+  --tc-error-600: #dc2626;
+  --tc-error-700: #b91c1c;
+  --tc-error-800: #991b1b;
+  --tc-error-900: #7f1d1d;
+  --tc-error-950: #450a0a;
+
+  /* Info - Sky */
+  --tc-info-50: #f0f9ff;
+  --tc-info-100: #e0f2fe;
+  --tc-info-200: #bae6fd;
+  --tc-info-300: #7dd3fc;
+  --tc-info-400: #38bdf8;
+  --tc-info-500: #0ea5e9;
+  --tc-info-600: #0284c7;
+  --tc-info-700: #0369a1;
+  --tc-info-800: #075985;
+  --tc-info-900: #0c4a6e;
+  --tc-info-950: #082f49;
+
+  /* White & Black */
+  --tc-white: #ffffff;
+  --tc-black: #000000;
+}

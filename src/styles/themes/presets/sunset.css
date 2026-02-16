@@ -1,0 +1,28 @@
+/**
+ * ThemeCraft Sunset Accent Preset
+ * Warm orange tones
+ */
+
+[data-accent='sunset'] {
+  /* Primary palette - Sunset Orange */
+  --tc-primary-50: #fff7ed;
+  --tc-primary-100: #ffedd5;
+  --tc-primary-200: #fed7aa;
+  --tc-primary-300: #fdba74;
+  --tc-primary-400: #fb923c;
+  --tc-primary-500: #f97316;
+  --tc-primary-600: #ea580c;
+  --tc-primary-700: #c2410c;
+  --tc-primary-800: #9a3412;
+  --tc-primary-900: #7c2d12;
+  --tc-primary-950: #431407;
+
+  /* Interactive colors */
+  --tc-interactive-primary: var(--tc-primary-500);
+  --tc-interactive-primary-hover: var(--tc-primary-600);
+  --tc-interactive-primary-active: var(--tc-primary-700);
+
+  /* Focus */
+  --tc-focus-ring-color: var(--tc-primary-500);
+  --tc-border-focus: var(--tc-primary-500);
+}

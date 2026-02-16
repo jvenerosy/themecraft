@@ -1,0 +1,28 @@
+/**
+ * ThemeCraft Slate Accent Preset
+ * Neutral gray tones
+ */
+
+[data-accent='slate'] {
+  /* Primary palette - Slate Gray */
+  --tc-primary-50: #f8fafc;
+  --tc-primary-100: #f1f5f9;
+  --tc-primary-200: #e2e8f0;
+  --tc-primary-300: #cbd5e1;
+  --tc-primary-400: #94a3b8;
+  --tc-primary-500: #64748b;
+  --tc-primary-600: #475569;
+  --tc-primary-700: #334155;
+  --tc-primary-800: #1e293b;
+  --tc-primary-900: #0f172a;
+  --tc-primary-950: #020617;
+
+  /* Interactive colors */
+  --tc-interactive-primary: var(--tc-primary-500);
+  --tc-interactive-primary-hover: var(--tc-primary-600);
+  --tc-interactive-primary-active: var(--tc-primary-700);
+
+  /* Focus */
+  --tc-focus-ring-color: var(--tc-primary-500);
+  --tc-border-focus: var(--tc-primary-500);
+}
